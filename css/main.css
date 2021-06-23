@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -22,20 +23,33 @@ html {
 /* ? Nagłówek: */
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #FEFEFE;
     background: rgb(196, 250, 147);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(196, 250, 147, 1)), color-stop(40%, rgba(209, 135, 250, 1)), to(rgba(129, 226, 250, 1)));
+    background: -o-linear-gradient(left, rgba(196, 250, 147, 1) 0%, rgba(209, 135, 250, 1) 40%, rgba(129, 226, 250, 1) 100%);
     background: linear-gradient(90deg, rgba(196, 250, 147, 1) 0%, rgba(209, 135, 250, 1) 40%, rgba(129, 226, 250, 1) 100%);
 }
 
 .branding {
     margin-left: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
 .branding-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
     color: inherit;
@@ -55,22 +69,33 @@ html {
 /* ? Nawigacja: */
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .navigation-list {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1.5rem;
     position: absolute;
     right: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     text-transform: uppercase;
 }
 
 .navigation-item {
     margin: 0 16px;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease;
 }
 
@@ -112,6 +137,8 @@ html {
     height: 4px;
     background-color: #FEFEFE;
     border-radius: 15px;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease;
 }
 
@@ -129,6 +156,8 @@ html {
 
 .line.active:nth-child(1) {
     top: calc(50% - 2px);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -138,6 +167,8 @@ html {
 
 .line.active:nth-child(3) {
     top: calc(50% - 2px);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -173,17 +204,27 @@ html {
     font-family: 'Amatic SC', cursive;
     padding: 12px 24px;
     font-size: 2rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     color: #FEFEFE;
     background: rgb(196, 250, 147);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(196, 250, 147, 1)), color-stop(40%, rgba(209, 135, 250, 1)), to(rgba(129, 226, 250, 1)));
+    background: -o-linear-gradient(left, rgba(196, 250, 147, 1) 0%, rgba(209, 135, 250, 1) 40%, rgba(129, 226, 250, 1) 100%);
     background: linear-gradient(90deg, rgba(196, 250, 147, 1) 0%, rgba(209, 135, 250, 1) 40%, rgba(129, 226, 250, 1) 100%);
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease;
 }
 
 .join-us:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0 0 0 2.5px #3B5672;
     box-shadow: 0 0 0 2.5px #3B5672;
 }
 
@@ -196,16 +237,24 @@ html {
     font-family: 'Amatic SC', cursive;
     padding: 12px 24px;
     font-size: 2rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     color: #3B5672;
     background: #FEFEFE;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease;
 }
 
 .check-us-out:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0 0 0 2.5px #3B5672;
     box-shadow: 0 0 0 2.5px #3B5672;
 }
 
@@ -216,6 +265,8 @@ html {
 /* ? Indywidualne selektory: */
 
 #landing-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90vw;
     margin: 0 auto 80px auto;
@@ -225,12 +276,18 @@ html {
 #illustration-one {
     margin-top: 32px;
     width: auto;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 #first-introductory-text {
     margin: 16px 56px 0 136px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -242,9 +299,14 @@ html {
 }
 
 #second-page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     background: transparent;
     color: #FEFEFE;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90vw;
     margin: 0 auto 80px auto;
@@ -253,12 +315,18 @@ html {
 #illustration-two {
     margin: 16px 0 0 0;
     width: auto;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 #second-introductory-text {
     margin: 16px 28px 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -280,23 +348,42 @@ html {
 }
 
 .the-people {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .figure {
+    display: -ms-grid;
     display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 33%;
     margin-bottom: 64px;
 }
 
 .person {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     font-size: 1.75rem;
@@ -326,6 +413,8 @@ html {
 #blog {
     background: transparent;
     color: #3B5672;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90vw;
     margin: 0 auto;
@@ -344,19 +433,30 @@ html {
 #illustration-three {
     margin: 32px 64px 0 0;
     width: auto;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 #third-introductory-text {
     margin: 16px 28px 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .zbieranina {
     background: transparent;
     color: #3B5672;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90vw;
     margin: 0 auto;
@@ -375,15 +475,20 @@ html {
     font-size: 1.75rem;
     text-align: justify;
     margin-top: 0;
+    -moz-text-align-last: center;
     text-align-last: center;
 }
 
 /* ? Responsywność: */
 
 @media(max-width: 1275px) {
+
     #landing-page,
     #second-page,
     #blog {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
 
@@ -395,6 +500,7 @@ html {
     #second-introductory-text,
     #third-introductory-text {
         margin: 16px 0 0 0;
+        -moz-text-align-last: center;
         text-align-last: center;
     }
 }
